@@ -23,3 +23,6 @@ In the project directory, you can run:
 
 ### Deployment
 ### `npm run build` fails to minify
+
+make cloud
+https://console.cloud.google.com/
