@@ -1,6 +1,8 @@
 import React from "react";
 
-const PlaceDeatils = () => {
-  return <div>PlaceDeatils</div>;
+const PlaceDeatils = ({place}) => {
+  return (
+    <h1>{place.name}</h1>
+  )
 };
 export default PlaceDeatils;
