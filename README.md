@@ -26,3 +26,5 @@ In the project directory, you can run:
 
 make cloud
 https://console.cloud.google.com/
+
+- API AXIOS (Rapid Api)

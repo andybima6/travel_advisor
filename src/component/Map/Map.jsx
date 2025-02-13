@@ -8,10 +8,17 @@ const containerStyle = {
 
 const center = { lat: 0, lng: 0 };
 
-const Map = () => {
+const Map = ({setCoordinates,setBounds, coordinates}) => {
   return (
     <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14} 
+      onChange = {(e)=> {
+        console.log(e)
+        setCoordinates({lat:e.center.lat,lng:e.center.lng});
+        setBounds({ne:e.marginBounds.ne,sw:e.marginBounds.sw})
+      }}
+      onChildClick = {''}
+      >
         {/* Add markers or overlays here */}
       </GoogleMap>
     </LoadScript>
