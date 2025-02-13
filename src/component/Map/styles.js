@@ -1,4 +1,4 @@
-import { makeStyles,alpha } from "@mui/material";
+import { makeStyles } from '@mui/styles'; // Ganti dari @mui/material/styles ke @mui/styles
 
 export default makeStyles(() => ({
     paper: {
